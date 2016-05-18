@@ -1,0 +1,785 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>什么是 JSX | 课程目的</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../react-dir/第二节/2为什么要使用JSX.html" />
+    
+    
+    <link rel="prev" href="../../react-dir/第一节/3了解顶层API.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.1"
+        data-chapter-title="什么是 JSX"
+        data-filepath="react-dir/第二节/1什么是JSX.md"
+        data-basepath="../.."
+        data-revision="Wed May 18 2016 18:37:21 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> 初识React</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="react-dir/第一节/1初识React.html">
+            
+                
+                    <a href="../../react-dir/第一节/1初识React.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        初识React
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="react-dir/第一节/2React组件及其渲染.html">
+            
+                
+                    <a href="../../react-dir/第一节/2React组件及其渲染.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        React组件及其渲染
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="react-dir/第一节/3了解顶层API.html">
+            
+                
+                    <a href="../../react-dir/第一节/3了解顶层API.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        了解顶层API
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> JSX语法</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.1" data-path="react-dir/第二节/1什么是JSX.html">
+            
+                
+                    <a href="../../react-dir/第二节/1什么是JSX.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        什么是 JSX
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="react-dir/第二节/2为什么要使用JSX.html">
+            
+                
+                    <a href="../../react-dir/第二节/2为什么要使用JSX.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        为什么要使用 JSX
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="react-dir/第二节/3注释.html">
+            
+                
+                    <a href="../../react-dir/第二节/3注释.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        注释
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="react-dir/第二节/4命名.html">
+            
+                
+                    <a href="../../react-dir/第二节/4命名.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        命名
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="react-dir/第二节/5根元素个数.html">
+            
+                
+                    <a href="../../react-dir/第二节/5根元素个数.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        根元素个数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="react-dir/第二节/6嵌入变量.html">
+            
+                
+                    <a href="../../react-dir/第二节/6嵌入变量.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        嵌入变量
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="react-dir/第二节/7styles.html">
+            
+                
+                    <a href="../../react-dir/第二节/7styles.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        styles
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="react-dir/第二节/8JSX&amp;SPREAD.html">
+            
+                
+                    <a href="../../react-dir/第二节/8JSX&amp;SPREAD.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        JSX SPREAD
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="react-dir/第二节/9属性名不能和js关键字冲突.html">
+            
+                
+                    <a href="../../react-dir/第二节/9属性名不能和js关键字冲突.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        属性名不能和 js 关键字冲突
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 数据流</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="react-dir/第三节/1stateSetState.html">
+            
+                
+                    <a href="../../react-dir/第三节/1stateSetState.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        state setState
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="react-dir/第三节/2props.html">
+            
+                
+                    <a href="../../react-dir/第三节/2props.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        props
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="react-dir/第三节/3propTypes.html">
+            
+                
+                    <a href="../../react-dir/第三节/3propTypes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        propTypes
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 定义组件</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="react-dir/第四节/1组件初始定义.html">
+            
+                
+                    <a href="../../react-dir/第四节/1组件初始定义.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        组件初始定义
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="react-dir/第四节/2初次创建组件时调用.html">
+            
+                
+                    <a href="../../react-dir/第四节/2初次创建组件时调用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        初次创建组件时调用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="react-dir/第四节/3组件的属性值改变时调用.html">
+            
+                
+                    <a href="../../react-dir/第四节/3组件的属性值改变时调用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        组件的属性值改变时调用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="react-dir/第四节/4销毁组件.html">
+            
+                
+                    <a href="../../react-dir/第四节/4销毁组件.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        销毁组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="react-dir/第四节/5示例.html">
+            
+                
+                    <a href="../../react-dir/第四节/5示例.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        示例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="react-dir/第四节/6回顾组件的渲染过程.html">
+            
+                
+                    <a href="../../react-dir/第四节/6回顾组件的渲染过程.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        回顾组件的渲染过程
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> DOM操作</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="react-dir/第五节/1React中获取DOM的两种方式.html">
+            
+                
+                    <a href="../../react-dir/第五节/1React中获取DOM的两种方式.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        React 中获取DOM的两种方式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="react-dir/第五节/2示例一.html">
+            
+                
+                    <a href="../../react-dir/第五节/2示例一.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        示例一
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="react-dir/第五节/3示例二.html">
+            
+                
+                    <a href="../../react-dir/第五节/3示例二.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        示例二
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> 事件</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="react-dir/第六节/1事件.html">
+            
+                
+                    <a href="../../react-dir/第六节/1事件.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        事件
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> 组件嵌套</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="react-dir/第七节/1受限组件&amp;&amp;非受限组件.html">
+            
+                
+                    <a href="../../react-dir/第七节/1受限组件&amp;&amp;非受限组件.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        受限组件 &amp;&amp; 非受限组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="react-dir/第七节/2使用自定义的组件.html">
+            
+                
+                    <a href="../../react-dir/第七节/2使用自定义的组件.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        使用自定义的组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="react-dir/第七节/3使用CHILDREN组合.html">
+            
+                
+                    <a href="../../react-dir/第七节/3使用CHILDREN组合.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        使用 CHILDREN 组合
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+            <span><b>8.</b> 表单操作</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="react-dir/第八节/1React表单组件和html的不同点.html">
+            
+                
+                    <a href="../../react-dir/第八节/1React表单组件和html的不同点.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        React表单组件和 html 的不同点
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="react-dir/第八节/2综合表达组件示例.html">
+            
+                
+                    <a href="../../react-dir/第八节/2综合表达组件示例.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        综合表达组件示例
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" >
+            
+            <span><b>9.</b> mixin</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="react-dir/第九节/1ES5语法实现mixin.html">
+            
+                
+                    <a href="../../react-dir/第九节/1ES5语法实现mixin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        ES5 语法实现 mixin
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="react-dir/第九节/2用high-orderComponent的方式实现.html">
+            
+                
+                    <a href="../../react-dir/第九节/2用high-orderComponent的方式实现.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        用high-order component的方式实现
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >课程目的</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="1-&#x4EC0;&#x4E48;&#x662F;-jsx">1. <code>&#x4EC0;&#x4E48;&#x662F; JSX</code></h2>
+<p>&#x7C7B;&#x4F3C; xml &#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x7EC4;&#x4EF6;&#x6811;</p>
+<pre><code>var HelloMessage = React.createClass({
+  render: function() {
+    return &lt;div&gt;Hello {this.props.name}&lt;/div&gt;;
+  }
+});
+
+React.render(&lt;HelloMessage name=&quot;John&quot; /&gt;, mountNode);
+</code></pre><p>JSX&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x5E76;&#x4E0D;&#x5F3A;&#x5236;&#x8981;&#x6C42;&#x4F7F;&#x7528;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x7528;JSX&#xFF0C;&#x7528;React&#x63D0;&#x4F9B;&#x7684;API&#x5199;&#x7684;&#x8BDD;&#xFF0C;&#x5E94;&#x8BE5;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF0C;&#x76F4;&#x63A5;&#x8C03;&#x7528;React&#x7684;API&#x6765;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;&#x548C;DOM&#x5143;&#x7D20;&#x3002;</p>
+<pre><code>
+var HelloMessage = React.createClass({
+  displayName: &quot;HelloMessage&quot;,
+  render: function() {
+    return React.createElement(&quot;div&quot;, null, &quot;Hello &quot;, this.props.name);
+  }
+});
+
+React.render(React.createElement(HelloMessage, {name: &quot;John&quot;}), mountNode);
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../react-dir/第一节/3了解顶层API.html" class="navigation navigation-prev " aria-label="Previous page: 了解顶层API"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../react-dir/第二节/2为什么要使用JSX.html" class="navigation navigation-next " aria-label="Next page: 为什么要使用 JSX"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
